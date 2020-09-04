@@ -1,4 +1,6 @@
 <?php
+require 'Liga.class.php';
+
 $db = mysqli_connect('localhost','root','','ligakreglarskaprzyklad');
 //lub obiektowo
 //$db = new mysqli('localhost','root','','ligakreglarskaprzyklad') 
@@ -34,4 +36,9 @@ while( $row = mysqli_fetch_assoc($result) ) {
     echo '</tr>';
 }
 echo '</table>';
+
+//implementacja obiektowa
+$liga = new Liga();
+echo $liga->playersList();
+echo $liga->playersTable();
 ?>
