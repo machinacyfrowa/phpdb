@@ -14,4 +14,6 @@ while($row = $result->fetch_assoc()) {
     echo '</tr>';
 }
 echo '</table>';
+
 ?>
+<a href="nowy.php">Dodaj nowego</a>
