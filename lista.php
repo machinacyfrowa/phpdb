@@ -10,6 +10,7 @@ while($row = $result->fetch_assoc()) {
         echo '<td>'.$row['ImieKreglarza'].'</td>';
         echo '<td>'.$row['NazwiskoKreglarza'].'</td>';
         echo '<td><a href="edycja.php?id='.$row['IDKreglarza'].'">Edytuj</a></td>';
+        echo '<td><a href="usun.php?id='.$row['IDKreglarza'].'">Usuń</a></td>';
     echo '</tr>';
 }
 echo '</table>';
